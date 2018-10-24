@@ -1,0 +1,66 @@
+//table样式
+.ivu-table-wrapper {
+    border: none;//外框左上边
+    .ivu-table {
+        background-color: transparent;
+        .ivu-table-header th{
+            background-color: transparent;
+            color: #DDDDDD;
+            border: none;//标题边下线
+        }
+        .ivu-table-body{
+            table {
+                border-collapse:separate;
+                border-spacing:0px 10px;
+            }
+            .ivu-table-tbody{
+                .ivu-table-row{
+                    background-color: #00396a;
+                    td {
+                        border: none;//body中行下边框线
+                        background-color: transparent;
+                        color: #DDDDDD;
+                    }
+                    .ivu-btn {
+                        display: inline-block;
+                        margin-bottom: 0;
+                        font-weight: 400;
+                        text-align: center;
+                        vertical-align: middle;
+                        touch-action: manipulation;
+                        cursor: pointer;
+                        background-image: none;
+                        border: 1px solid transparent;
+                        white-space: nowrap;
+                        line-height: 1.5;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        padding: 2px 3px;
+                        font-size: 12px;
+                        border-radius: 4px;
+                        transition: color .2s linear,background-color .2s linear,border .2s linear,box-shadow .2s linear;
+                        color: #495060;
+                        background-color: transparent;
+                        border-color: transparent;
+                    }
+                    .ivu-btn :hover {
+                        color: #56bcff;
+                    }
+                }
+                tr:hover{
+                    background-color: #084b84;
+                } /*鼠标悬停后表格背景颜色*/
+            }
+        }
+        .ivu-table-tip{
+        }
+    }
+    .ivu-table:before{
+        height: 0px;
+    }
+    .ivu-table:after{
+        width: 0px;
+    }
+}

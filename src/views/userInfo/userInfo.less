@@ -1,0 +1,79 @@
+.user_info {
+    position: relative;
+    height: 100%;
+    z-index: 20000;
+    .listWrap {
+      float: left;
+      margin-top: 20px;
+      width: 220px;
+      .titleCnt {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        font-size: 16px;
+        color: #92ccff;
+        background: url("/static/images/structureBg.png") ~"0 0 / 100% 100%" no-repeat;
+      }
+      margin-left: 20px;
+      height: calc(~"100% - 55px");
+      background: rgba(0, 12, 24, .5);
+      overflow-y: scroll;
+      .ivu-menu.ivu-menu-light.ivu-menu-vertical {
+        .ivu-menu-submenu {
+          .ivu-menu-submenu-title {
+            .ivu-icon.ivu-icon-ios-arrow-down.ivu-menu-submenu-title-icon {
+              opacity: 0;
+            }
+            .devOnNum {
+              position: absolute;
+              right: 20px;
+              top: 10px;
+            }
+          }
+          .ivu-menu {
+            .ivu-menu-item {
+              padding: 10px 32px;
+              transition: all .2s ease-in-out;
+              .devOnNums {
+                position: absolute;
+                right: 20px;
+                top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .ivu-menu-vertical .ivu-menu-submenu-title {
+      padding: 6px 24px;
+    }
+    .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+      color: #fff;
+      background: linear-gradient(180deg, #024d9e, #0079ce);
+      border-right: none;
+    }
+    .ivu-menu-vertical.ivu-menu-light:after {
+      width: 0;
+    }
+    .policeSelect {
+      overflow: hidden;
+      padding-left: 20px;
+      margin-top: 20px;
+      .footer {
+        text-align: right;
+        margin: 10px 10px 10px 0px;
+      }
+      .toolbar {
+        .searchClass {
+          width: 160px;
+          background-color: #003558;
+          border: 1px solid #084b84;
+          padding: 5px;
+          border-radius: 5px;
+          color: #DDDDDD;
+          outline: none;
+          -webkit-appearance: none;
+        }
+      }
+    }
+  }

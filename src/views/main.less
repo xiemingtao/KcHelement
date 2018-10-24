@@ -1,0 +1,503 @@
+.lock-screen-back {
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 0 0 0 #667aa6 inset;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 3s;
+}
+.userModal.v-transfer-dom {
+  .ivu-modal-wrap {
+    .ivu-modal {
+      border: none;
+      box-shadow: none;
+      top: 200px;
+      .ivu-modal-content {
+        // box-shadow: 0px 0px 5px 2px #0E4174;
+        overflow: hidden;
+        background-color: #041A2F;
+        .ivu-modal-header {
+          border: none;
+          .ivu-modal-header-inner {
+            text-align: center;
+            font-size: 16px;
+            color: #ddd;
+          }
+        }
+        .ivu-modal-body {
+          font-size: 14px;
+          text-align: center;
+          color: #ddd;
+        }
+        .ivu-modal-footer {
+          border: none;
+          text-align: center;
+          padding: 30px 60px;
+          overflow: hidden;
+          .btn-cancel {
+            float: left;
+            width: 100px;
+          }
+          .btn-edit {
+            width: 100px;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  .single-page-con {
+    min-width: 800px;
+    overflow: scroll !important;
+    .single-page {
+      .ivu-table-wrapper {
+        .ivu-table {
+          .ivu-table-tip {
+            table {
+              td {
+                background-color: rgba(0, 57, 106, .2);
+                color: #fff;
+                border: none
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //分页样式
+  .ivu-page {
+
+    .ivu-page-item {
+      background-color: transparent;
+      border: 1px solid #084b84;
+      a {
+        margin: 0 6px;
+        text-decoration: none;
+        color: #DDDDDD;
+      }
+    }
+    .ivu-page-prev,
+    .ivu-page-next {
+      background-color: transparent;
+      border: 1px solid #084b84;
+    }
+
+    .ivu-page-item-active {
+      background-color: #00396a;
+      border-color: #2d8cf0;
+    }
+    .ivu-page-item-active:hover a, .ivu-page-item-active a {
+      color: #DDDDDD;
+    }
+
+    .ivu-page-options-elevator {
+      display: inline-block;
+      vertical-align: middle;
+      height: 32px;
+      line-height: 32px;
+
+    }
+    .ivu-page-options-elevator input {
+      display: inline-block;
+      width: 100%;
+      height: 32px;
+      line-height: 1.5;
+      padding: 4px 7px;
+      font-size: 12px;
+      border: 1px solid #084b84;
+      color: #DDDDDD;
+      background-color: transparent;
+      background-image: none;
+      position: relative;
+      cursor: text;
+      transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
+      border-radius: 4px;
+      margin: 0 8px;
+      width: 50px;
+    }
+  }
+
+  .ivu-page.mini .ivu-page-item {
+    margin: 0;
+    min-width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+  }
+  .ivu-page.mini .ivu-page-prev,
+  .ivu-page.mini .ivu-page-next {
+    margin: 0;
+    min-width: 24px;
+    height: 24px;
+    line-height: 24px;
+  }
+  .ivu-page.mini .ivu-page-options-elevator {
+    height: 24px;
+    line-height: 24px;
+  }
+  .ivu-page.mini .ivu-page-options-elevator input {
+    padding: 1px 7px;
+    height: 24px;
+    border-radius: 3px;
+    width: 44px;
+  }
+
+
+  //下拉选择框样式
+  .ivu-select-dropdown {
+    width: inherit;
+    max-height: 200px;
+    overflow: auto;
+    margin: 5px 0;
+    padding: 5px 0;
+    background-color: #003558;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    position: absolute;
+    z-index: 900;
+  }
+  .unlock-con {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 11000;
+  }
+  .sidebar-menu-con {
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 21;
+    transition: width .3s;
+    background: rgb(3, 25, 41, .6);
+    .vue-scroller-bars-wraper {
+      overflow-y: scroll;
+    }
+  }
+  .layout-text {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+  }
+  .main-hide-text .layout-text {
+    display: none;
+  }
+  &-content-container {
+    position: relative;
+  }
+  &-header-con {
+    box-sizing: border-box;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100px;
+    z-index: 20;
+    transition: padding .3s;
+  }
+  &-breadcrumb {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0, 29, 59, .5);
+    font-size: 24px;
+  }
+  &-menu-left {
+    background: #464c5b;
+    height: 100%;
+  }
+  .tags-con {
+    display: flex;
+    height: 40px;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(4, 41, 73, 1), rgba(4, 41, 73, 0));
+    .navicon-con {
+      margin: 6px;
+      display: inline-block;
+      .ivu-btn {
+        font-size: 0;
+        width: 32px;
+        height: 32px;
+        padding: 3px 5px;
+        &.ivu-btn-text {
+          color: #fff;
+        }
+        .ivu-icon {
+          line-height: 24px;
+        }
+      }
+    }
+    .tags-outer-scroll-con {
+      position: relative;
+      box-sizing: border-box;
+      padding-right: 120px;
+      width: calc(~"100% - 0px");
+      height: 100%;
+      .tags-inner-scroll-body {
+        position: absolute;
+        padding: 2px 10px;
+        overflow: visible;
+        white-space: nowrap;
+        transition: left .3s ease;
+        .ivu-tag .ivu-icon.ivu-icon-ios-close-empty:hover {
+          color: #000 !important;
+        }
+      }
+      .close-all-tag-con {
+        position: absolute;
+        right: 0;
+        top: 0;
+        box-sizing: border-box;
+        padding-top: 8px;
+        text-align: center;
+        width: 110px;
+        height: 100%;
+        background: white;
+        box-shadow: -3px 0 15px 3px rgba(0, 0, 0, .1);
+        z-index: 10;
+      }
+    }
+  }
+  &-header {
+    height: 60px;
+    background: rgba(0, 24, 25, .6) url("/static/images/police_icon.png") no-repeat;
+    background-position: 20px 10px;
+    background-size: 46px 45px;
+    position: relative;
+    z-index: 11;
+    .header-middle-con {
+      position: absolute;
+      left: 60px;
+      top: 0;
+      right: 340px;
+      bottom: 0;
+      padding: 10px;
+      overflow: hidden;
+    }
+    .header-avator-con {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 360PX;
+      .switch-theme-con {
+        display: inline-block;
+        width: 40px;
+        height: 100%;
+      }
+      .message-con {
+        display: inline-block;
+        width: 30px;
+        padding: 18px 0;
+        text-align: center;
+        cursor: pointer;
+        i {
+          vertical-align: middle;
+        }
+      }
+      .change-skin {
+        font-size: 14px;
+        font-weight: 500;
+        padding-right: 5px;
+      }
+      .switch-theme {
+        height: 100%;
+      }
+      .user-dropdown {
+        &-menu-con {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 300px;
+          height: 100%;
+          .main-user-name {
+            display: inline-block;
+            width: 80px;
+            word-break: keep-all;
+            white-space: nowrap;
+            vertical-align: middle;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: right;
+          }
+        }
+        &-innercon {
+          height: 100%;
+          padding-right: 14px;
+          .ivu-dropdown {
+            margin-right: 10px;
+          }
+        }
+      }
+      .full-screen-btn-con {
+        display: inline-block;
+        width: 30px;
+        padding: 18px 0;
+        text-align: center;
+        cursor: pointer;
+        i {
+          vertical-align: middle;
+        }
+      }
+      // .lock-screen-btn-con {
+      //   display: inline-block;
+      //   width: 30px;
+      //   padding: 18px 0;
+      //   text-align: center;
+      //   cursor: pointer;
+      //   i {
+      //     vertical-align: middle;
+      //   }
+      // }
+    }
+  }
+  .single-page-con {
+    min-width: 800px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    overflow: hidden; // background-color: #F0F0F0;
+    z-index: 1;
+    transition: left .3s;
+    .single-page {
+      margin: 10px;
+      height: calc(~"100% - 20px");
+    }
+  }
+  &-copy {
+    text-align: center;
+    padding: 10px 0 20px;
+    color: #9ea7b4;
+  }
+}
+
+.taglist-moving-animation-move {
+  transition: transform .3s;
+}
+
+.logo-con {
+  padding: 8px;
+  text-align: center;
+  img {
+    height: 44px;
+    width: auto;
+  }
+}
+
+.ivu-tag-dot {
+  background: #0f3f69 !important;
+  border: none !important;
+  .ivu-tag-text {
+    color: #678fb1;
+  }
+  &.ivu-tag-blue {
+    .ivu-tag-text {
+      color: #0194ff;
+    }
+  }
+}
+
+.ivu-tag-dot-inner {
+  background: #3e719e;
+}
+
+.main .tags-con .tags-outer-scroll-con .close-all-tag-con {
+  background: transparent;
+}
+
+.ivu-menu.ivu-menu-dark.ivu-menu-vertical {
+  background: transparent;
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item:hover,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title:hover {
+  background: url("/static/images/menuFcous_bg2.png") no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+// .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu),
+// .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu),
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened:hover,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-submenu-title:hover,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active:hover,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item:hover,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu),
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu):hover,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu),
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu):hover {
+  background: url("/static/images/menuFcous_bg2.png") no-repeat !important;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  border-right: none;
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-submenu-title {
+  background: none;
+}
+
+.ivu-dropdown-rel:hover {
+  background: url("/static/images/menuFcous_bg.png") no-repeat !important;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+.ivu-icon-menu_icon_ind {
+    background: url("/static/images/menuIcon_index.png") no-repeat;
+}
+.user-dropdown-menu-con {
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+  }
+  .person {
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    // background: url('./../../static/images/top_police.png') no-repeat;
+  }
+  .login_out {
+    height: 27px;
+    line-height: 27px;
+    .loginout {
+      // width: 20px;
+      // height: 20px;
+      // background: url('./../../static/images/top_quit.png') no-repeat;
+      cursor: pointer;
+      font-size: 12px;
+      color: #fff;
+      margin-left: 20px;
+    }
+  }
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: #DDD;
+  opacity: 1;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #DDD;
+  opacity: 1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #DDD;
+  opacity: 1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #DDD;
+  opacity: 1;
+}

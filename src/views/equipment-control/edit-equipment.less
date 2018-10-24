@@ -1,0 +1,124 @@
+.edit-equipment {
+  .title {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .add-equipment-form{
+    position: relative;
+    left: 20%;
+    top: 60px;
+    width: 640px;
+    .form-input{
+      background-color:  #031f3b;
+      border: 0px solid transparent;
+      width: 300px;
+      height: 32px;
+      color: #add6ff;
+      float: left;
+      font-size: 12px;
+      padding: 5px;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    .form-input-1.ivu-input-wrapper.ivu-input-type{
+      background-color:  #031f3b;
+      border: 0px solid transparent;
+      width: 300px;
+      height: 32px;
+      color: #add6ff;
+      font-size: 12px;
+      padding: 5px;
+      outline: none;
+      -webkit-appearance: none;
+      .ivu-input {
+        background-color: transparent;
+        border: none;
+        -webkit-appearance: none;
+        outline: none;
+        color: #add6ff;
+        padding: 0;
+        height: 24px;
+        &:focus {
+          box-shadow: none;
+          border: none;
+          background-color: transparent;
+        }
+        .ivu-form-item-error.ivu-input:focus {
+          box-shadow: none;
+          border: none;
+          background-color: transparent;
+        }
+      }
+    }
+    .ivu-form-item-error-tip {
+      left: 120px;
+    }
+    .form-label{
+      color: #DDDDDD;
+      width: 120px;
+      float:left ;
+    }
+    button {
+      width: 100px;
+      height: 35px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 14px;
+      color: #fff;
+      text-shadow: 1px 1px 1px #333;
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+      &.btn-confirm {
+        // float: right;
+        margin-left: 80px;
+        border: 1px solid rgb(0, 141, 255);
+        // box-shadow: 0 1px 2px #8fcaee inset, 0 -1px 0 #497897 inset, 0 -2px 3px #8fcaee inset;
+        background-color: rgb(0, 141, 255);
+        &:hover {
+          background-color: rgba(0, 141, 255,.8);
+        }
+        &:active {
+          top: 1px;
+          background-color: rgba(0, 141, 255,.5);
+        }
+      }
+      &.btn-cancel {
+        // float: left;
+        border: 1px solid rgb(10, 51, 90);
+        background-color: rgb(10, 51, 90);
+        &:hover {
+           background-color: rgba(10, 51, 90,.8);
+        }
+        &:active {
+          top: 1px;
+           background-color: rgba(10, 51, 90, .5);
+        }
+      }
+    }
+    .ivu-form-item-content {
+      position: relative;
+      line-height: 32px;
+      font-size: 12px;
+      .select-item{
+        float: left;
+        width: 155px;
+        backface-visibility: hidden;
+        .ivu-select-selection {
+          box-shadow: none;
+          border: none;
+          .ivu-select-arrow {
+            color: #80848f;
+          }
+        }
+      }
+      .ivu-form-item-error-tip{
+        top: 35px;
+      }
+    }
+
+  }
+
+}

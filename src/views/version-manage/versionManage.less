@@ -1,0 +1,128 @@
+//有些样式在父布局样式中
+
+.version-main{
+  height: 100%;
+
+  .ivu-form .ivu-form-item-label {
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    font-size: 12px;
+    color: #ddd;
+    line-height: 1;
+    padding: 10px 12px 10px 0;
+    box-sizing: border-box;
+  }
+
+  .input-content {
+    border-radius: 4px;
+    background-color: #003558;
+
+    .ivu-load-loop {
+      display: none;
+      //animation: ani-load-loop 1s linear infinite;
+    }
+    .ivu-input {
+      display: inline-block;
+      line-height: 1.5;
+      padding: 4px 7px;
+      font-size: 12px;
+      border: none;
+      outline: none;
+      color: #ddd;
+      background-color: transparent;
+      background-image: none;
+      position: relative;
+      box-shadow: none;
+      cursor: text;
+      transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
+      &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .btn-upload{
+    background-color:  #084b84;
+    text-align: center;
+    width: 100px;;
+    color: #ccc;
+    border: 0px solid transparent;
+    outline: none;
+    -webkit-appearance: none;
+    &:active {
+      background: rgba(8, 75, 132, 0.7);
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+  .btn-reset {
+    margin-left: 20px;
+    width: 100px;
+    background-color: #0a335a;
+    // outline: none;
+    // border: none;
+    border: 1px solid #0a335a;
+    color: #6699cc;
+    &:active {
+      background: rgba(10, 51, 90, .7);
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+  .btn-confirm {
+    width: 100px;
+  }
+
+  .ivu-upload{
+    ul {
+      list-style:none;
+    }
+    .ivu-upload-select {
+      display: inline-block;
+      float: left;
+    }
+    .ivu-upload-list {
+      float: left;
+      margin: 0px;
+
+      li:hover{
+        background-color: transparent;
+        color: #DDDDDD;
+      }
+      .ivu-upload-list-file {
+        height: 30px;
+        float:left;
+        margin-left:10px;
+        color: #DDDDDD;
+        border-radius: 4px;
+        transition: background-color .2s ease-in-out;
+        overflow: hidden;
+        position: relative;
+      }
+    }
+  }
+}
+
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: #ddd;
+  opacity: 1;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #ddd;
+  opacity: 1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #ddd;
+  opacity: 1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #ddd;
+  opacity: 1;
+}
+
+

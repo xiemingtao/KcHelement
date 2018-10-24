@@ -1,0 +1,148 @@
+.user-infor {
+  .title {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .userInfo_toux{
+    //style="width: 80px;height: 80px;background: none"
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 120px;
+    background: none;
+  }
+  .user-infor-content {
+    float: left;
+    position: relative;
+    width: 600px;
+    left: 20%;
+    margin-left: 60px;
+    //.select-item {
+    //  width: 150px;
+    //  margin-right: 6px;
+    //}
+    .into-edit{
+      background-color:  #031f3b;
+      border: 0px solid transparent;
+      width: 480px;
+      height: 32px;
+      color: #add6ff;
+      float: left;
+      font-size: 12px;
+      padding: 5px;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    .into-edit-1{
+      background-color:  transparent;
+      border: 0px solid transparent;
+      width: 480px;
+      height: 32px;
+      color: #437eb9;
+      float: left;
+      font-size: 12px;
+      padding: 5px;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    .form-label{
+      color: #DDDDDD;
+      width: 120px;
+      float:left ;
+    }
+    button {
+      width: 90px;
+      height: 32px;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 1px #333;
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+      &.btn-confirm {
+        // float: right;
+        margin-left: 80px;
+        border: 1px solid rgb(0, 141, 255);
+        // box-shadow: 0 1px 2px #8fcaee inset, 0 -1px 0 #497897 inset, 0 -2px 3px #8fcaee inset;
+        background-color: rgb(0, 141, 255);
+        &:hover {
+          background-color: rgba(0, 141, 255,.8);
+        }
+        &:active {
+          top: 1px;
+          background-color: rgba(0, 141, 255,.5);
+        }
+      }
+      &.btn-cancel {
+        // float: left;
+        border: 1px solid rgb(10, 51, 90);
+        background-color: rgb(10, 51, 90);
+        &:hover {
+           background-color: rgba(10, 51, 90,.8);
+        }
+        &:active {
+          top: 1px;
+           background-color: rgba(10, 51, 90, .5);
+        }
+      }
+    }
+    .modifyClass{
+      color: #437eb9;
+    }
+    .modifyClass :hover{
+      color: #6699cc;
+    }
+  }    
+  .ivu-input {
+    background-color: #031f3b;
+    border: 0px solid transparent;
+    height: auto;
+    line-height: normal;
+    outline: none;
+    border-radius: 0;
+    color: #add6ff;
+    padding: 0;
+    padding-top: 5px;
+    &:focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: 0px 0px 0px 0px transparent
+    }
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color: #757575;
+    }
+  }
+  .ivu-form-item-error {
+    .ivu-input {
+      outline: none;
+      &:focus {
+        outline: none;
+        border-color: transparent;
+        box-shadow: 0px 0px 0px 0px transparent
+      }
+    }
+    .ivu-form-item-error-tip {
+      left: 125px;
+      top: 32px;
+    }
+  }
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: #DDD;
+  opacity: 1;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #DDD;
+  opacity: 1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #DDD;
+  opacity: 1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #DDD;
+  opacity: 1;
+}

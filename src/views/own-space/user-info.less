@@ -1,0 +1,205 @@
+.user-infor {
+  .title {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .userInfo_toux{
+    //style="width: 80px;height: 80px;background: none"
+    width: 100px;
+    height: 100px;
+    margin-left: 120px;
+    float: left;
+    background: none;
+  }
+  .user-infor-div {
+    float: left;
+    width: 600px;
+    margin-left: 60px;
+    .ivu-form-item-content {
+      .ivu-input-wrapper.ivu-input-type {
+        width: auto;
+        float: left;
+        .ivu-input {
+          background-color:  #031f3b;
+          border: 0px solid transparent;
+          width: 480px;
+          height: 32px;
+          color: #add6ff;
+          font-size: 12px;
+          padding: 5px;
+          outline: none;
+          -webkit-appearance: none;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+      .ivu-form-item-error-tip {
+        top: 35px;
+        left: 120px;
+      }
+    }
+    .into-edit{
+      background-color:  #031f3b;
+      border: 0px solid transparent;
+      width: 480px;
+      height: 32px;
+      color: #add6ff;
+      float: left;
+      font-size: 12px;
+      padding: 5px;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    .into-edit-1{
+      background-color:  transparent;
+      border: 0px solid transparent;
+      width: 480px;
+      height: 32px;
+      color: #437eb9;
+      float: left;
+      font-size: 12px;
+      padding: 5px;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    .form-label{
+      color: #DDDDDD;
+      width: 120px;
+      float:left ;
+    }
+    button {
+      width: 100px;
+      height: 35px;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 1px #333;
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+      &.btn-confirm {
+        // float: right;
+        margin-left: 80px;
+        border: 1px solid rgb(0, 141, 255);
+        // box-shadow: 0 1px 2px #8fcaee inset, 0 -1px 0 #497897 inset, 0 -2px 3px #8fcaee inset;
+        background-color: rgb(0, 141, 255);
+        &:hover {
+          background-color: rgba(0, 141, 255,.8);
+        }
+        &:active {
+          top: 1px;
+          background-color: rgba(0, 141, 255,.5);
+        }
+      }
+      &.btn-cancel {
+        // float: left;
+        border: 1px solid rgb(10, 51, 90);
+        background-color: rgb(10, 51, 90);
+        &:hover {
+           background-color: rgba(10, 51, 90,.8);
+        }
+        &:active {
+          top: 1px;
+           background-color: rgba(10, 51, 90, .5);
+        }
+      }
+    }
+    .modifyClass{
+      color: #437eb9;
+    }
+    .modifyClass :hover{
+      color: #6699cc;
+    }
+  }
+}
+
+//弹出框样式
+.ivu-modal-wrap {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+
+  .ivu-modal {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    outline: 0;
+    top: 100px;
+
+    .ivu-modal-content {
+      position: relative;
+      background-color: #041a2f;
+      border: 1px solid rgba(32,124,213,5);
+      border-radius: 6px;
+      background-clip: padding-box;
+
+      .ivu-modal-close {
+        font-size: 12px;
+        position: absolute;
+        right: 16px;
+        top: 8px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .ivu-modal-header {
+        border-bottom: 0px solid #e9eaec;
+        padding: 14px 16px;
+        line-height: 1;
+      }
+      .ivu-modal-body {
+        padding: 0px 16px;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      .ivu-modal-footer {
+        border-top: 0px solid #e9eaec;
+        padding: 12px 18px;
+        text-align: right;
+      }
+
+      .ivu-form .ivu-form-item-label {
+        text-align: right;
+        vertical-align: middle;
+        float: left;
+        font-size: 12px;
+        color: #437eb9;
+        line-height: 2;
+        // padding: 10px 12px 10px 0;
+        box-sizing: border-box;
+      }
+      .modalInput {
+        display: inline-block;
+        width: 100%;
+        height: 32px;
+        line-height: 1.5;
+        padding: 4px 7px;
+        font-size: 12px;
+        // border: 1px solid #084b84;
+        border-radius: 4px;
+        color: #DDDDDD;
+        background-color: transparent;
+        background-image: none;
+        position: relative;
+        cursor: text;
+        transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
+        .ivu-input {
+          background-color: transparent;
+          color: #fff;
+          font-size: 14px;
+          border: 1px solid #207cd5;
+        }
+      }
+      
+
+    }
+  }
+}

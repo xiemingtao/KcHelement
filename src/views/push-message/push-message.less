@@ -1,0 +1,190 @@
+
+.push-message{
+  height: 100%;
+  .push-content {
+    margin:  20px 0;
+    height: 100%;
+    .ivu-tabs .ivu-tabs-content-animated {
+      height: 100%;
+      .ivu-tabs-tabpane {
+        height: 100%;
+      }
+    } 
+    //标签样式
+    .ivu-tabs {
+      height: 100%;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      color: #5a98d5;
+      zoom: 1;
+      .ivu-tabs-bar {
+        border-bottom: 1px solid #5a98d5;
+        margin-bottom: 16px;
+        .ivu-tabs-nav-container {
+          margin-bottom: -1px;
+          line-height: 1.5;
+          font-size: 14px;
+          box-sizing: border-box;
+          white-space: nowrap;
+          overflow: hidden;
+          position: relative;
+          zoom: 1;
+          .ivu-tabs-nav-wrap {
+            overflow: hidden;
+            margin-bottom: -1px;
+          }
+        }
+      }
+    }
+
+    //form label标签样式
+    .ivu-form .ivu-form-item-label {
+      text-align: right;
+      vertical-align: middle;
+      float: left;
+      font-size: 12px;
+      color: #9ac6e3;
+      line-height: 1;
+      padding: 10px 12px 10px 0;
+      box-sizing: border-box;
+    }
+
+    //下拉选择框样式
+    .ivu-form-item .ivu-form-item-content {
+      //form取消按钮样式
+      button {
+        width: 90px;
+        height: 32px;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #333;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        &.btn-confirm {
+          // float: right;
+          margin-left: 80px;
+          border: 1px solid rgb(0, 141, 255);
+          // box-shadow: 0 1px 2px #8fcaee inset, 0 -1px 0 #497897 inset, 0 -2px 3px #8fcaee inset;
+          background-color: rgb(0, 141, 255);
+          &:hover {
+            background-color: rgba(0, 141, 255,.8);
+          }
+          &:active {
+            top: 1px;
+            background-color: rgba(0, 141, 255,.5);
+          }
+        }
+        &.btn-cancel {
+          // float: left;
+          border: 1px solid rgb(10, 51, 90);
+          background-color: rgb(10, 51, 90);
+          &:hover {
+             background-color: rgba(10, 51, 90,.4);
+          }
+          &:active {
+            top: 1px;
+             background-color: rgba(10, 51, 90, .8);
+          }
+        }
+      }
+
+      //checkbox样式
+      .ivu-checkbox .ivu-checkbox-inner {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        position: relative;
+        top: 0;
+        left: 0;
+        border: 1px solid #9ac6e3;
+        border-radius: 2px;
+        background-color: #003558;
+        transition: border-color .2s ease-in-out,background-color .2s ease-in-out,box-shadow .2s ease-in-out;
+      }
+    }
+  }
+  .ivu-form-item-content {
+    .select-item {
+      width: 168px;
+      position: relative;
+      .ivu-select-selection {
+        height: 32px;
+        line-height: 32px;
+        width: 100%;
+        overflow: hidden;
+        // .ivu-icon.ivu-select-arrow {
+        //   position: absolute;
+        //   right: 15px;
+        //   top: 20px;
+        // }
+        .ivu-tag {
+          float: left;
+          background-color: #003558;
+          border: none;
+          height: 24px;
+          line-height: 24px;
+          margin: 3px 4px 3px 0;
+          padding: 0 5px;
+          padding-right: 5px;
+          .ivu-tag-text {
+            color: #fff;
+          }
+          .ivu-icon-ios-close-empty {
+            color: #fff;
+          }
+        }
+      }
+      .ivu-select-dropdown-list {
+        .ivu-select-item{
+          &::after {
+            display: inline-block;
+            font-family: Ionicons;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            text-rendering: auto;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            float: right;
+            font-size: 15px;
+            content: "\F372";
+          }
+        }
+        .ivu-select-item.ivu-select-item-focus {
+          background: #084b84;
+        }
+        .ivu-select-item-selected {
+          background-color: rgb(0, 53, 88);
+          &::after {
+            display: inline-block;
+            font-family: Ionicons;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            text-rendering: auto;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            float: right;
+            font-size: 15px;
+            content: "\F373";
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+

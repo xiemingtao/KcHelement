@@ -1,0 +1,230 @@
+.organization {
+  width: 100%;
+  height: 100%;
+  // background-color: #041a2f;
+  .title {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .organ-info {
+    padding-left: 20px;
+    margin-top: 20px;
+    .policeList {
+      float: left;
+      width: 220px;
+      height: 100%;
+      background-color: transparent;
+      .polTitle {
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 14px;
+        background-color: #0f3f69 ;
+        padding-left: 15px;
+        position: relative;
+        border-radius: 15px 0 0 0;
+        img {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 10px;
+          right: 14px;
+          cursor: pointer;
+        }
+        .editT {
+          cursor: pointer;
+          position: absolute;
+          // width: 20px;
+          // height: 20px;
+          // background: url('/static/images/menuIcon_log.png') no-repeat;
+          background-size: cover;
+          top: 5px;
+          right: 15px;
+          &:hover {
+            // background: url('/static/images/menuIcon_log_focus.png') no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+      .ivu-menu-vertical .ivu-menu-item,
+      .ivu-menu-vertical .ivu-menu-submenu-title {
+        // padding: 10px 24px;
+        line-height: 20px;
+      }
+      .ivu-menu-light {
+        background: transparent;
+      }
+      .ivu-menu-vertical .ivu-menu-item:hover,
+      .ivu-menu-vertical .ivu-menu-submenu-title:hover {
+        color: #fff;
+        background:  #041a2f;
+      }
+      .ivu-menu {
+        color: #6d9dc6;
+      }
+      .listWrap {
+        height: calc(~"100% - 40px");
+        background: rgba(6, 36, 62, 0.8);
+        overflow-y: scroll;
+        .icon {
+          position: absolute;
+          top: 15px;
+          right: 14px;
+          i {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
+            cursor: pointer;
+            &.edit {
+              background: url('/static/images/org_edit.png')  no-repeat;
+              background-size: cover;
+              &:hover {
+                background: url('/static/images/org_edit_focus.png')  no-repeat;
+                background-size: cover;
+              }
+            }
+            &.del {
+              background: url('/static/images/org_delete.png')  no-repeat;
+              background-size: cover;
+              &:hover {
+                background: url('/static/images/org_delete_focus.png')  no-repeat;
+                background-size: cover;
+              }
+            }
+          }
+        }
+        .ivu-menu-item-group-title {
+          height: 0;
+        }
+      }
+      .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+        color: #fff;
+        background: #041a2f;
+        border-right: none;
+      }
+      .ivu-menu-vertical.ivu-menu-light:after {
+        width: 0;
+      }
+      .ivu-menu-light.ivu-menu-vertical .ivu-menu-item {
+        border:none;
+      }
+      // .polList {
+      //   li {
+      //     height: 40px;
+      //     line-height: 40px;
+      //     color: #6d9dc6;
+      //     text-indent: 28px;
+      //     font-size: 14px;
+      //     // font-weight: 700;
+      //     background-color: rgba(6, 36, 62, 0.8);
+      //     position: relative;
+      //     &:hover {
+      //       background-color: #041a2f;
+      //       color: #fff;
+      //     }
+      //     .icon {
+      //       position: absolute;
+      //       top: 5px;
+      //       right: 14px;
+      //       i {
+      //         display: inline-block;
+      //         width: 15px;
+      //         height: 15px;
+      //         margin-left: 5px;
+      //         cursor: pointer;
+      //         &.edit {
+      //           background: url('/static/images/org_edit.png')  no-repeat;
+      //           background-size: cover;
+      //           &:hover {
+      //             background: url('/static/images/org_edit_focus.png')  no-repeat;
+      //             background-size: cover;
+      //           }
+      //         }
+      //         &.del {
+      //           background: url('/static/images/org_delete.png')  no-repeat;
+      //           background-size: cover;
+      //           &:hover {
+      //             background: url('/static/images/org_delete_focus.png')  no-repeat;
+      //             background-size: cover;
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+    }
+    .policeSelect {
+      overflow: hidden;
+      padding-left: 20px;
+      .footer {
+        text-align: right;
+        margin: 10px 10px 10px 0px;
+      }
+      .toolbar {
+        .searchClass {
+          width: 160px;
+          background-color: #003558;
+          border: 1px solid #084b84;
+          padding: 5px;
+          border-radius: 5px;
+          color: #DDDDDD;
+          outline: none;
+          -webkit-appearance: none;
+        }
+      }
+    }
+  }
+}
+// .ivu-modal-wrap {
+//   .ivu-modal {
+//     top: 200px;
+//     .ivu-modal-content {
+//       box-shadow: 0px 0px 5px 2px #0E4174;
+//       overflow: hidden;
+//       // height: 220px;
+//       background-color: #041A2F;
+//       .ivu-modal-body {
+//         margin-top: 20px;
+//         text-align: center;
+//         color: #345B81;
+//         p{
+//           &:first-of-type {
+//             padding-bottom: 20px;
+//             color: #fff;
+//             text-align: center;
+//             font-size: 16px;
+//           }
+//           &:last-of-type {
+//             text-align: center;
+//             color: #345B81;
+//             font-size: 14px;
+//           }
+//         }
+//       }
+//       .ivu-modal-footer {
+//         padding:18px 60px;
+//         border: none;
+//         width: 100%;
+//         margin-top: 40px;
+//         display: inline-block;
+//         text-align: center;
+//         .ivu-btn.ivu-btn-text.ivu-btn-large {
+//           width: 100px;
+//           float: left;
+//           color: #345B81;
+//           background-color: #0A335A;
+//         }
+//         .ivu-btn.ivu-btn-primary.ivu-btn-large {
+//           border: none;
+//           width: 100px;
+//           float: right;
+//           color: #fff;
+//           background-image: linear-gradient(180deg, #024d9e, #0079ce);
+//         }
+//       }
+//     }
+//   }
+// }

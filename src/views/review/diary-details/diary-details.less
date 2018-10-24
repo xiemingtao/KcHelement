@@ -1,0 +1,568 @@
+
+.diary-details {
+  position: relative;
+  height: 100%;
+  .trackMap {
+    // padding: 50px;
+    width: 83.3333333333333333333%;
+    height: 650px;
+    position: absolute;
+    // background-color: #fff;
+    right: 0;
+    // top: 55px;
+    .review-col {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      z-index: 999;
+      // .review-dtatPocker {
+      //   .ivu-input {
+      //     background-color: #003558;
+      //     border: 1px solid #003558;
+      //     color: #fff;
+      //     width: 150px;
+      //   }
+      //   .ivu-icon {
+      //     line-height: 32px;
+      //   }
+      // }
+      .wh_container {
+        max-width: 265px;
+        margin: auto;
+        .wh_content_all {
+          background-color: rgba(8,42,73,.9);
+          .wh_top_changge {
+            li {
+              height: 35px;
+              font-size: 12px;
+              color: #ccc;  
+              .wh_jiantou1 {
+                width: 10px;
+                height: 10px;
+                border-top: 2px solid #ccc;
+                border-left: 2px solid #ccc;
+              }
+              .wh_jiantou2 {
+                width: 10px;
+                height: 10px;
+                border-top: 2px solid #ccc;
+                border-right: 2px solid #ccc;
+              }
+            }
+          }
+          .wh_content {
+            .wh_content_item {
+              text-align: center;
+              font-size: 12px;
+              color: #ccc;
+              height: 30px;
+              .wh_top_tag {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+              }
+              .wh_item_date.wh_isMark {
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                color: #fff;
+                background-color: #07A940 !important;
+              }
+              .wh_item_date.wh_isToday {
+                position: relative;
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                background: none;
+                &:after{
+                  position: absolute;
+                  width: 5px;
+                  height: 5px;
+                  background-color: #f90;
+                  border-radius: 50%;
+                  top: 0;
+                  right: -4px;
+                  content: '',
+                  
+                }
+              }
+              .wh_item_date {
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                &:hover {
+                  background: none;
+                }
+              }
+              .wh_item_date.wh_other_dayhide {
+                color: #666;
+              }
+              .wh_item_date.wh_chose_day {
+                background: none;
+                color: #2DF909;
+              }
+            }
+          }
+        }
+      }
+    }
+    .close-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 999;
+    }
+    .ivu-select-dropdown {
+      width: 233px;
+      max-height: 300px;
+      overflow: auto;
+      margin: 5px 0;
+      padding: 5px 0;
+      background-color: #003558;
+      box-sizing: border-box;
+      border-radius: 4px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+      position: absolute;
+      z-index: 900;
+      .ivu-date-picker-cells {
+        .ivu-date-picker-cells-cell {
+          color: #fff;
+          &:hover em {
+            background-color: #2d8cf0;
+          }
+        }
+        .ivu-date-picker-cells-cell.ivu-date-picker-cells-cell-prev-month, .ivu-date-picker-cells-cell.ivu-date-picker-cells-cell-next-month{
+          em {
+          color: #666;
+          }
+        }
+      }
+    }
+  }
+  .diary-title {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    .btn-cancel {
+     position: absolute;
+     left: 0;
+     top: -8px;
+     width: 80px;
+     background: rgba(45, 140, 240, 0.1);
+     border: transparent;
+     &:active {
+      background: rgba(45, 140, 240, 0.9);
+     }
+    }
+  }
+  .ivu-table-wrapper {
+    clear: both;
+    padding:0px 10px 10px 10px;
+    border: none; //外框左上边
+    .ivu-table {
+      background-color: transparent;
+      .ivu-table-header th {
+        background-color: transparent;
+        color: #DDDDDD;
+        border: none; //标题边下线
+        cursor: pointer;
+        .ivu-poptip-content {
+          color: #fff;
+          .ivu-poptip-arrow::after {
+            border-bottom-color: #00396a;
+            background-color: #00396a;
+          }
+          .ivu-poptip-inner {
+            background-color: #00396a;
+          }
+        }
+        .ivu-select.ivu-select-single {
+          .ivu-select-selection {
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+          }
+        }
+      }
+      .ivu-table-body {
+        table {
+          border-collapse: separate;
+          border-spacing: 0px 10px;
+        }
+        .ivu-table-tbody {
+          .ivu-table-row {
+            border-radius: 10px;
+            background-color: #00396a;
+            td {
+              border: none; //body中行下边框线
+              background-color: transparent;
+              color: #DDDDDD;
+            }
+          }
+          tr:hover {
+            background: #084b84;
+          }
+          /*鼠标悬停后表格背景颜色*/
+        }
+      }
+      .ivu-table-tip {
+      }
+    }
+    .ivu-table:before {
+      height: 0px;
+    }
+    .ivu-table:after {
+      width: 0px;
+    }
+  }
+
+  .diary-tb-bg {
+    border: 2px solid #00396a;
+    min-height: 660px;
+    border-radius: 6px;
+    width: 100%;
+    height: initial;
+    //菜单样式
+    .diary-menu-bg {
+      background-color: #06243e;
+      border-radius: 6px 0px 0px 6px;
+      height: 100%;
+      .ivu-menu {
+        display: block;
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        list-style: none;
+        color: #495060;
+        font-size: 14px;
+        position: relative;
+        z-index: 900;
+        .ivu-menu-item-group {
+          line-height: normal;
+          .ivu-menu-item-group-title {
+            color: hsla(0,0%,100%,.36);
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            padding-left: 28px;
+          }
+          .ivu-menu-item {
+            padding: 14px 14px;
+            display: block;
+            outline: 0;
+            list-style: none;
+            font-size: 12px;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+          }
+        }
+      }
+    }
+    .video_class {
+      width: 100%;
+      padding: 15px 50px 0 50px;
+      position: relative;
+      .review-dtatPocker.ivu-date-picker {
+        position: absolute;
+        z-index: 666;
+        top: 50px;
+        // left: 60px;
+        right: 260px;
+        width: 220px;
+        .ivu-icon {
+          line-height: 2.5;
+        }
+        .ivu-input {
+          background-color: #003558;
+          border: none;
+          color: #fff;
+        }
+        .ivu-select-dropdown {
+          max-height: 338px;
+          .ivu-picker-panel-body {
+            .ivu-date-picker-header {
+              .ivu-date-picker-header-label {
+                color: #fff;
+              }
+            }
+            .ivu-picker-panel-content {
+              .ivu-date-picker-cells {
+                em {
+                  color: #fff;
+                }
+                .ivu-date-picker-cells-cell.ivu-date-picker-cells-cell-prev-month, .ivu-date-picker-cells-cell.ivu-date-picker-cells-cell-next-month{
+                  em {
+                    color: #999;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .video_title {
+        border-radius: 10px 10px 0 0;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        width: 100%;
+        background-color: #666;
+      }
+      .video_live {
+        border-radius:  0 0 10px 10px;
+        overflow: hidden;
+        background-color: #ccc;
+        position: relative;
+        min-width: 600px;
+        width: 100%;
+        .ivu-menu.ivu-menu-light.ivu-menu-vertical {
+         float: right;
+         background-color: #ccc;
+         max-height: 439px;
+         overflow: scroll;
+         .ivu-checkbox-wrapper {
+           width: 200px;
+           position: relative;
+           .ivu-checkbox {
+            position: absolute;
+            top: 14px;
+            left: 5px;
+           }
+           .ivu-menu-item {
+             float: left;
+             padding: 0;
+             margin-left: 28px;
+             &:hover {
+
+             }
+           }
+          }
+        }
+        .video-player.vjs-custom-skin {
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  //表格分页样式
+  .footer {
+    text-align: right;
+    margin: 0 20px 10px 0px;
+  }
+
+}
+
+.modal-header{
+  text-align: center;
+  color: #DDDDDD;
+}
+.modalText{
+  padding: 10px 0px;
+  .ivu-row {
+    height: 25px;
+    line-height: 25px;
+    .ivu-col {
+      overflow: hidden;
+    }
+  }
+}
+.modalText label{
+  color: #eee;
+}
+.modalText span{
+  margin-left: 6px;
+  color: #DDDDDD;
+}
+
+// .modal-photo-img {
+//   width: 72px;
+//   height: 72px;
+//   border-radius: 36px;
+// }
+.modal-photo{
+  text-align: center;
+  margin:0 auto;
+  margin-top: 20px;
+}
+.similarity{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height:auto;
+  border: 1px solid #2d8cf0;
+  border-radius: 5px;
+  padding: 2px 0px;
+}
+
+//弹出框样式
+.ivu-modal-wrap {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+
+  .ivu-modal {
+    margin: 0 auto;
+    position: relative;
+    outline: 0;
+    top: 100px;
+    background-color: #041a2f;
+    border: 1px solid rgba(32,124,213,5);
+    box-shadow: 0 0 6px rgba(32,124,213,5);
+
+    .ivu-modal-content {
+      position: relative;
+      // width: 500px;
+      background-color: transparent;
+      // border: 1px solid rgba(32,124,213,5);
+      // box-shadow: 0 0 6px rgba(32,124,213,5);
+      border-radius: 6px;
+      background-clip: padding-box;
+
+      .ivu-modal-close {
+        font-size: 12px;
+        position: absolute;
+        right: 16px;
+        top: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        .ivu-icon.ivu-icon-ios-close-empty {
+          &:hover {
+            color: #f90;
+          }
+        }
+      }
+      .ivu-modal-header {
+        border-bottom: 0px solid #e9eaec;
+        padding: 14px 16px;
+        line-height: 1;
+      }
+      .ivu-modal-body {
+        padding: 0px 16px;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: left;
+        // .video_style {
+        //   width: 100%;
+        //   height: 360px;
+        //   .video-wrapper {
+        //     height: 100%;
+        //   }
+        // }
+        img {
+          width: 100%;
+        }
+      }
+      .ivu-modal-footer {
+        border-top: 0px solid #e9eaec;
+        padding: 12px 18px;
+        text-align: right;
+      }
+    }
+  }
+}
+.EtuModal{
+  .ivu-modal-wrap {
+    .ivu-modal {
+      background-color: rgba(111, 59, 63, 0.6);
+      border: 1px solid rgba(201, 28, 31, 1);
+      box-shadow: 0 0 6px 1px rgba(203, 87, 94, 1);
+    }
+  }
+}
+.ivu-tooltip-popper {
+  .ivu-tooltip-content {
+    .ivu-tooltip-inner {
+      max-width: none;
+      background: #ddd;
+      color: #333;
+    }
+  }
+}
+.video_list {
+  .ivu-modal-wrap {
+    .ivu-modal {
+      background-color: #222;
+      box-shadow:  none;
+      border: 1px solid #222;
+      .ivu-modal-content {
+        // width: 500px;
+        .ivu-modal-header {
+          padding: 10px 16px;
+          background-color: #111;
+        }
+        .ivu-modal-close {
+          // right: -230px;
+          top: 0px;
+        }
+        .ivu-modal-footer {
+          padding: 0;
+        }
+        .ivu-modal-body {
+          // position: relative;
+          padding: 0;
+          .video-player.video-player.vjs-custom-skin {
+            // height: 360px;
+            width: 690px;
+            .video-wrapper {
+              height: 100%;
+            }
+          }
+          .ivu-menu.ivu-menu-light.ivu-menu-vertical {
+            width: 200px;
+            position: absolute;
+            right: 0px;
+            top: 34px;
+            border: none;
+            height: 388px;
+            // height: calc(~"100% - 34px");
+            overflow: scroll;
+            background-color: transparent;
+            color: #aaa;
+            .ivu-menu-item {
+              padding: 7px 10px;
+              font-size: 12px;
+            }
+            &::after{
+              width: 0;
+            }
+            .ivu-menu-item {
+              border: none;
+              position: relative;
+              .video_time {
+                position: absolute;
+                right: 18px;
+                top: 7px;
+              }
+            }
+          }
+          .ivu-menu-vertical .ivu-menu-item:hover,
+          .ivu-menu-vertical .ivu-menu-submenu-title:hover {
+            color: #fff;
+            border: none;
+            background: #333;
+          }
+          .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+            color: #fff;
+            background: #333;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
